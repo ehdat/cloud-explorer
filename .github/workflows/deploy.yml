@@ -30,7 +30,7 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cloud-badge:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cloud-badge:v1
 
   deploy:
     needs: build-and-push # <-- this job must wait for which job?
